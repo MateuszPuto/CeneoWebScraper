@@ -1,0 +1,19 @@
+{% extends "layout.html.jinja" %}
+
+{% block middle %}
+    <div>
+    	<br><br>
+    	<a href='{{ url_for('product', id=url["id"]) }}'>Powrót</a>
+	<br><br>
+	
+	<iframe src="{{ url_for('static', filename=url["overview"]) }}" width="500" height="300" frameBorder="0"></iframe><br>
+	<h5>Rys. 1</h5><br>
+	<img src="{{ url_for('static', filename=url["rcmd"]) }}">Wykres rekomendacje</img><br>
+	<h5>Rys. 2</h5><br>
+	<img src="{{ url_for('static', filename=url["stars"]) }}">Wykres gwiazdki</img><br>
+	<h5>Rys. 3</h5><br>
+ 	<img src="{{ url_for('static', filename=url["pros"]) }}">Wykres zalety</img><br>
+ 	<h5>Rys. 4</h5><br>
+	<img src="{{ url_for('static', filename=url["cons"]) }}">Wykres wady</img><br>
+    </div>
+{% endblock middle %}

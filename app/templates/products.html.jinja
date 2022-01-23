@@ -1,0 +1,19 @@
+{% extends "layout.html.jinja" %}
+
+{% block middle %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+    <h2>Produkty</h2>
+    <ul class="list-group">
+    	{% if products|length > 0 %}
+        	{% for product, name, noOpinions, noPros, noCons, stars, price in products  %}
+            	<li class="list-group-item" id="first"><a href="{{ url_for('product', id=product) }}">{{name}}</a></li>
+            	<li class="list-group-item">ID: {{product}}&emsp;Liczba opinii: {{noOpinions}}&emsp;Zalety: {{noPros}}&emsp;Wady: {{noCons}}&emsp;Gwiazdki: {{stars}}&emsp;Cena: {{price}} zł</li>
+            	<li class="list-group-item">
+               	<a download="../downloads/{{product}}/{{product}}.xml" href="../downloads/{{product}}/{{product}}.xml">Pobierz XML</a>&emsp;
+                	<a download="../downloads/{{product}}/{{product}}.csv" href="../downloads/{{product}}/{{product}}.csv">Pobierz CSV</a>&emsp;
+                	<a download="../downloads/{{product}}/{{product}}.json" href="../downloads/{{product}}/{{product}}.json">Pobierz JSON</a>&emsp;
+            	<li class="list-group-item"></li>
+        	{% endfor %}
+        {% endif %}
+    </ul>
+{% endblock middle %}

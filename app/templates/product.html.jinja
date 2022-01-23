@@ -1,0 +1,64 @@
+{% extends "layout.html.jinja" %}
+
+{% block middle %}
+
+    <h2>{{product.name}}</h2>
+    <br>
+    <a href="{{ url_for('charts', id=product.id) }}">Zobacz wykresy</a>
+    <br><br>
+    <p>
+    <a download="../downloads/{{product.id}}/{{product.id}}.xml" href="../downloads/{{product.id}}/{{product.id}}.xml">Pobierz XML</a>&emsp;
+    <a download="../downloads/{{product.id}}/{{product.id}}.csv" href="../downloads/{{product.id}}/{{product.id}}.csv">Pobierz CSV</a>&emsp;
+    <a download="../downloads/{{product.id}}/{{product.id}}.json" href="../downloads/{{product.id}}/{{product.id}}.json">Pobierz JSON</a>&emsp;
+    </p>
+    <br><br>
+    
+    <div>
+
+        <table>
+            <tr style="border: 1px solid black;"><td> ID: {{ product.id }} </td></tr>
+            <tr style="border: 1px solid black;"><td> Nazwa: {{ product.name }} </td></tr>
+            <tr style="border: 1px solid black;"><td> Gwiazdki: {{ product.stars }} / 5 </td></tr>
+            <tr style="border: 1px solid black;"><td> Cena: {{ product.price }} zł</td></tr>
+            <tr><td> Opinie: </td></tr>
+         </table>
+         <br><br>
+        
+        <table class="sortable" style="border-collapse: collapse;">
+            <tr style="background-color: lightgray;">
+                <td>ID</td> 
+                <td>Autor</td>
+                <td>Rcmd</td>
+                <td>Gwiazdki</td>
+                <td>Zawartość</td>
+                <td>Zalety</td>
+                <td>Wady</td>
+                <td>Zakupiony</td>
+                <td>Data publikacji</td>
+                <td>Data zakupu</td>
+                <td>Przydatna opinia</td>
+                <td>Nieprzydatna opinia</td>
+            </tr>
+
+            {% set sort_on = request.args.sort_on|default('id') %}
+            {% for item in product.opinions|sort(attribute=sort_on) %}
+            <tr>
+                <td>{{item.id}}</td> 
+                <td>{{item.author}}</td>
+                <td>{{item.rcmd}}</td>
+                <td>{{item.stars}}</td>
+                <td>{{item.content}}</td>
+                <td>{{item.pros}}</td>
+                <td>{{item.cons}}</td>
+                <td>{{item.purchased}}</td>
+                <td>{{item.publishDate}}</td>
+                <td>{{item.purchaseDate}}</td>
+                <td>{{item.useful}}</td>
+                <td>{{item.useless}}</td>
+            </tr>
+            {% endfor %}
+        </table>
+
+    </div>
+
+{% endblock middle %}
