@@ -1,5 +1,4 @@
 # CeneoWebScraper
 Uni project
 
-Known issues:
-- recommendation charts are drawn corrupted
+![Ceneo Web Scraper Site](webscraper-site.png)
