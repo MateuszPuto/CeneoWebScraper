@@ -10,6 +10,7 @@ Next type and open link that shows up in the terminal:
 
 ![Ceneo Web Scraper Site](webscraper-site.png)
 *Fig 1.1 Preview of the site*
+_____________________________________________
 
 ### Cel aplikacji
 Aplikacja pozwala na ekstrakcję opinii o wybranym produkcie z serwisu internetowego Ceneo.pl, a także wyświetlenie ich, pobranie w wybranym formacie oraz podstawową analizę.
