@@ -45,7 +45,7 @@ class Product:
 
     def exportProduct(self):
         #create directory
-        os.mkdir(f"app/downloads/{self.id}")
+        os.makedirs(f"app/downloads/{self.id}")
 
         #save json file
         with open(f"app/products/{self.id}.json", "w", encoding="UTF-8") as f:

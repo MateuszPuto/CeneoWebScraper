@@ -1,0 +1,111 @@
+{
+    "productId": "61905794",
+    "productName": "Ekspres Melitta Barista TS Smart stal nierdzewna F86/0-100 EU",
+    "stars": "4.00",
+    "price": "3 499,00",
+    "opinions": [
+        {
+            "id": "11334735",
+            "author": "Piotr",
+            "rcmd": true,
+            "stars": 5.0,
+            "content": "Dokładnie to czego oczekuję po ekspresie do kawy.  Funkcje określające temperaturę zaparzania kawy i jej intensywność są świetne.   Rano jak się spieszę do pracy kawa jest parzona w mniejszej temperaturze.",
+            "pros": [
+                "czyszczenie",
+                "jakość wykonania",
+                "łatwość obsługi",
+                "spienianie mleka",
+                "trwałość"
+            ],
+            "cons": [],
+            "purchased": true,
+            "publishDate": "2019-11-27 22:04:21",
+            "purchaseDate": "2019-11-23 11:02:20",
+            "useful": 5,
+            "useless": 2
+        },
+        {
+            "id": "13784888",
+            "author": "o...1",
+            "rcmd": true,
+            "stars": 5.0,
+            "content": "Świetna sprawa. Intuicyjna obsługa. Jestem mega zadowolona",
+            "pros": [
+                "czyszczenie",
+                "jakość wykonania",
+                "łatwość obsługi",
+                "spienianie mleka",
+                "trwałość"
+            ],
+            "cons": [],
+            "purchased": true,
+            "publishDate": "2021-01-16 17:48:30",
+            "purchaseDate": "2020-12-16 18:59:19",
+            "useful": 2,
+            "useless": 0
+        },
+        {
+            "id": "13190589",
+            "author": "a...a",
+            "rcmd": true,
+            "stars": 5.0,
+            "content": "Rewelacja!",
+            "pros": [],
+            "cons": [],
+            "purchased": true,
+            "publishDate": "2020-10-11 12:02:21",
+            "purchaseDate": "2020-09-05 16:18:42",
+            "useful": 1,
+            "useless": 0
+        },
+        {
+            "id": "14854689",
+            "author": "m...s",
+            "rcmd": true,
+            "stars": 5.0,
+            "content": "ok",
+            "pros": [],
+            "cons": [],
+            "purchased": true,
+            "publishDate": "2021-08-18 10:29:06",
+            "purchaseDate": "2021-08-12 23:13:42",
+            "useful": 0,
+            "useless": 0
+        },
+        {
+            "id": "15567892",
+            "author": "b...2",
+            "rcmd": false,
+            "stars": 2.5,
+            "content": "Jakość wykonania ok, dostępne funkcje również, jednak ekran dotykowy fatalny. Parametry (wielkość i moc kawy) ustawia się już w chwili, gdy kawa jest robiona, więc czas na reakcję jest krótki, a ekran nie łapie poleceń. Na 2 takich ekspresach, kilku użytkowników ma ten sam uciążliwy problem. Uruchamianie przez aplikację jest łatwe, lecz ta jest niestabilna. Reasumując, kawa dobra, sposób obsługi rozczarowujący.",
+            "pros": [
+                "czyszczenie",
+                "jakość wykonania",
+                "spienianie mleka"
+            ],
+            "cons": [
+                "łatwość obsługi",
+                "słaba jakość ekranu"
+            ],
+            "purchased": true,
+            "publishDate": "2022-01-16 18:07:37",
+            "purchaseDate": "2021-12-16 12:21:29",
+            "useful": 0,
+            "useless": 0
+        },
+        {
+            "id": "15716055",
+            "author": "Użytkownik Ceneo",
+            "rcmd": false,
+            "stars": 0.5,
+            "content": "Szanowni Państwo, nie wiem kto pisze te opinie, nie kupujcie ich produktów. Ekspres za 4300 PLN praktyczni od początku nie spienia mleka, obsługa jest mało intuicyjna (generalnie tragedia), jedyne co działa bez zarzutu to młynek.  W EURO RTV powiedziano mi, że aby zareklamować produkt muszę na miesiąc odesłać ekspres. Mają 1 serwis w Warszawie, generalnie tragedia.",
+            "pros": [],
+            "cons": [],
+            "purchased": false,
+            "publishDate": "2022-02-17 12:21:19",
+            "purchaseDate": null,
+            "useful": 0,
+            "useless": 0
+        }
+    ]
+}
